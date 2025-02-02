@@ -43,7 +43,7 @@ const Pricing = () => {
             Pricing Offers
           </h2>
         </div>
-        <div className="mb-10 flex justify-center space-x-4 bg-white w-fit  rounded-3xl gap-7 mx-auto scale-95">
+        <div className="mb-10 flex justify-center space-x-4 bg-white w-fit  rounded-3xl gap-8 mx-auto scale-95">
           <button
             className={`text-lg font-medium font-Nunito-font transition px-20 py-2  rounded-3xl duration-100  transition-all${
               billingCycle === "monthly"
