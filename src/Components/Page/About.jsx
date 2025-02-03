@@ -1,5 +1,8 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import OurApps from "./OurApps";
+import CountersSection from "./CountersSection";
+import Team from "./Team";
+import OurProces from "./OurProces";
 const About = () => {
   return (
     <section className="py-20">
@@ -47,6 +50,10 @@ const About = () => {
             />
           </div>
         </div>
+      <OurProces />
+      <OurApps />
+      <CountersSection />
+      <Team />
       </div>
     </section>
   );
