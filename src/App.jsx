@@ -8,6 +8,7 @@ import Layout from "./Components/Layout";
 import About from "./Components/Page/About";
 import Page from "./Components/Page";
 import Pricing from "./Components/Page/Pricing";
+import Portfolio from "./Components/Page/Portfolio";
 
 function App() {
   const router = createBrowserRouter(
@@ -17,6 +18,7 @@ function App() {
         <Route index element={<Page/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/pricing" element={<Pricing/>}></Route>
+        <Route path="/portfolio" element={<Portfolio/>}></Route>
       </Route>
     )
   );

@@ -49,7 +49,7 @@ const OurProces = () => {
             Our Work Process
           </h2>
         </div>
-        <div className="grid grid-cols-2 justify-center text-center gap-6 px-72 mx-auto">
+        <div className="grid grid-cols-2 justify-center text-center gap-6 px-56 mx-auto">
           {steps.map((item, index) => (
             <div
               data-aos="fade-up"

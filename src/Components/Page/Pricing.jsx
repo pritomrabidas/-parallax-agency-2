@@ -36,10 +36,10 @@ const Pricing = () => {
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto text-center">
         <div className="">
-          <span className="text-lg font-medium text-[#24cdd5] text-center">
+          <span className="text-lg font-normal font-Nunito-font text-primary text-center">
             Quisque tellus risus, adipisci
           </span>
-          <h2 className="text-4xl font-medium text-[#384141] text-center pt-1 pb-16">
+          <h2 className="text-5xl font-semibold text-primary font-Montez text-center pt-2 pb-16">
             Pricing Offers
           </h2>
         </div>
@@ -65,31 +65,44 @@ const Pricing = () => {
             Yearly
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-28">
           {plans.map((plan, index) => (
-            <div key={index} className="bg-white p-6 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold">{plan.name}</h3>
-              <p className="text-gray-500">The standard version</p>
-              <div className="text-2xl font-bold text-blue-600 my-4">
+            <div
+              key={index}
+              className="bg-[#f5f4f4] py-7 px-16 shadow-xl rounded-lg justify-center mx-auto scale-95 hover:scale-100 duration-300 "
+            >
+              <h3 className="text-2xl text-brand font-Nunito-font font-medium">
+                {plan.name}
+              </h3>
+              <p className="text-brand text-2xl font-semibold font-Montez border-b pb-2 border-brand">
+                The standard version
+              </p>
+              <div className="text-2xl font-bold text-[#3fcfd4ba] font-Montez my-4">
                 $
                 {billingCycle === "monthly"
                   ? plan.price.toFixed(2)
                   : (plan.price * 10).toFixed(2)}
-                <span className="text-sm text-gray-500">/{billingCycle}</span>
+                <span className="text-xl text-brand">/{billingCycle}</span>
               </div>
               <ul className="text-left mb-4">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="text-gray-700">
+                  <li
+                    key={i}
+                    className="text-brand text-base font-normal font-Nunito-font "
+                  >
                     ✔ {feature}
                   </li>
                 ))}
                 {plan.unavailable.map((feature, i) => (
-                  <li key={i} className="">
-                    ✖ {feature}
+                  <li
+                    key={i}
+                    className="text-[#5c5e60f5]  text-base font-normal font-Nunito-font"
+                  >
+                    <span className="text-red-300">✖</span> {feature}
                   </li>
                 ))}
               </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+              <button className="w-fit  text-white text-base font-medium font-Opensans py-2.5 px-8 rounded-lg bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 scale-95">
                 Choose Plan
               </button>
             </div>
