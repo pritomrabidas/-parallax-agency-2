@@ -71,17 +71,29 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="relative py-16 bg-gray-50">
+    <section className="relative pt-24 pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="text-lg font-normal font-Nunito-font text-primary text-center">
+          <p
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="text-lg font-normal font-Nunito-font text-secandari text-center"
+          >
             Let's Explore Out
-          </span>
-          <h2 className="text-5xl font-semibold text-primary font-Montez text-center py-2">
+          </p>
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="text-5xl font-semibold text-primary font-Montez text-center py-2"
+          >
             Our Portfolio
           </h2>
-          <p className="mt-4 text-brand text-base font-Opensans font-normal mx-auto w-[45%]">
+          <p
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="mt-4 text-brand text-sm font-Opensans font-normal mx-auto w-[45%]"
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores
             omnis provident quam reiciendis voluptatum.
           </p>
@@ -105,6 +117,8 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {filteredItems.map((item, index) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
               key={item.id}
               className="relative group overflow-hidden rounded-lg shadow-lg"
             >

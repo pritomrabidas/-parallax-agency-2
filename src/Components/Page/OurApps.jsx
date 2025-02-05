@@ -10,14 +10,14 @@ const OurApps = () => {
             <div className="text-center pb-10">
               <span
                 data-aos="fade-left"
-                data-aos-duration="2000"
-                className="text-secandari block text-xl font-Nunito-font font-medium"
+                data-aos-duration="1500"
+                className="text-secandari block text-lg font-Nunito-font font-normal"
               >
                 Quisque tellus risus, adipisci viverra
               </span>
               <h2
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
                 className="text-5xl font-normal text-primary font-Montez py-3"
               >
                 Mobile App Designs
@@ -29,7 +29,7 @@ const OurApps = () => {
         <div className="flex flex-wrap items-center mt-8 justify-center space-x-4">
           <div
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             className="w-full lg:w-1/3 md:w-1/3 sm:w-full text-center md:text-right space-y-6"
           >
             <FeatureItem
@@ -47,7 +47,7 @@ const OurApps = () => {
 
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             className="w-full lg:w-1/3 md:w-1/3 sm:w-full text-center md:text-left space-y-6"
           >
             <FeatureItem2

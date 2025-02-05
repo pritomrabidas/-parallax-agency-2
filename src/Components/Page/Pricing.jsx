@@ -33,13 +33,21 @@ const Pricing = () => {
     },
   ];
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="pt-24 pb-16 bg-gray-100">
       <div className="container mx-auto text-center">
         <div className="">
-          <span className="text-lg font-normal font-Nunito-font text-primary text-center">
+          <span
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="text-secandari block text-lg font-Nunito-font font-normal"
+          >
             Quisque tellus risus, adipisci
           </span>
-          <h2 className="text-5xl font-semibold text-primary font-Montez text-center pt-2 pb-16">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="text-5xl font-semibold text-primary font-Montez text-center pt-2 pb-16"
+          >
             Pricing Offers
           </h2>
         </div>
@@ -68,6 +76,8 @@ const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-28">
           {plans.map((plan, index) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
               key={index}
               className="bg-[#f5f4f4] py-7 px-16 shadow-xl rounded-lg justify-center mx-auto scale-95 hover:scale-100 duration-300 "
             >

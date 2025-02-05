@@ -36,20 +36,20 @@ const OurProces = () => {
         <div className="mb-8">
           <span
             data-aos="fade-left"
-            data-aos-duration="2000"
-            className="text-primary block text-xl font-Nunito-font font-medium"
+            data-aos-duration="1500"
+            className="text-secandari block text-lg font-Nunito-font font-normal"
           >
             Quisque tellus risus, adipisci
           </span>
           <h2
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             className="text-5xl font-normal text-primary font-Montez mt-2"
           >
             Our Work Process
           </h2>
         </div>
-        <div className="grid grid-cols-2 justify-center text-center gap-6 px-56 mx-auto">
+        <div className="grid grid-cols-2 justify-center text-center gap-6 px-68 mx-auto">
           {steps.map((item, index) => (
             <div
               data-aos="fade-up"

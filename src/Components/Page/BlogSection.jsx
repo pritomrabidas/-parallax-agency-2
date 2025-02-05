@@ -23,16 +23,28 @@ const BlogSection = () => {
     },
   ];
   return (
-    <section className="bg-slate-100 pt-16 pb-24">
+    <section className="bg-slate-100 pt-24 pb-16">
       <div className="container mx-auto px-10">
         <div className="text-center">
-          <p className="text-lg font-normal font-Nunito-font text-primary text-center">
+          <p
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="text-lg font-normal font-Nunito-font text-secandari text-center"
+          >
             Read Out Our
           </p>
-          <h2 className="text-5xl font-semibold text-primary font-Montez text-center py-2">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="text-5xl font-semibold text-primary font-Montez text-center py-2"
+          >
             Latest Blog
           </h2>
-          <p className=" text-brand text-base font-Opensans font-normal pt-8 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[50%] 2xl:w-[60%] mx-auto">
+          <p
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className=" text-brand text-base font-Opensans font-normal pt-6 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[50%] 2xl:w-[60%] mx-auto"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             explicabo corrupti, voluptatum laborum consectetur iure.
           </p>
