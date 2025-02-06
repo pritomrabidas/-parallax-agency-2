@@ -25,6 +25,9 @@ const Navbar = () => {
                   <Link
                     key={item}
                     to={`/${item.toLowerCase()}`}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
                     className={`text-primary hover:text-secandari duration-200 text-base font-normal font-Poppins transition ${
                       isActive ? "text-secandari" : ""
                     }`}
@@ -38,7 +41,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <FiAlignRight />
+            <FiAlignRight className="text-xl cursor-pointer" />
           </button>
         </div>
 
@@ -48,21 +51,21 @@ const Navbar = () => {
               className=" sm:w-1/2 w-[10%] h-full"
               onClick={() => setIsOpen(false)}
             ></div>
-            <div className="absolute right-0 sm:w-[70%] w-[90%] h-[95%] bg-white shadow-lg p-8 transition-transform duration-300 rounded-l-3xl">
+            <div className="absolute right-0 sm:w-[50%] w-[90%] h-[95%] bg-white shadow-lg p-8 transition-transform duration-300 rounded-l-3xl">
               <button onClick={() => setIsOpen(false)}>
-                <RxCross2 />
+                <RxCross2 className="text-xl cursor-pointer" />
               </button>
-              {["Home", "About", "Pricing", "Portfolio", "Blog", "Contact"].map(
+              {["About", "Pricing", "Portfolio", "Blog", "Contact"].map(
                 (item) => {
                   const isActive = location.pathname.includes(
                     item.toLowerCase()
                   );
                   return (
-                    <div key={item}>
+                    <div key={item} className="pt-5">
                       <Link
-                        to={`#!/${item.toLowerCase()}`}
+                        to={`/${item.toLowerCase()}`}
                         onClick={() => setIsOpen(false)}
-                        className={`block text-primary py-4 font border-b hover:text-secandari transition ${
+                        className={`block text-primary py-4 font  hover:text-secandari transition duration-300 font-normal font-Nunito-font ${
                           isActive ? "text-secandari" : ""
                         }`}
                       >

@@ -58,14 +58,14 @@ const Team = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1023,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 639,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -74,7 +74,7 @@ const Team = () => {
     ],
   };
   return (
-    <section className="bg-slate-50 py-16 px-20">
+    <section className="bg-slate-50 py-16 2xl:px-5 xl:px-5 lg:px-14 md:px-6">
       <div className="container mx-auto px-10">
         <div className="text-center">
           <p

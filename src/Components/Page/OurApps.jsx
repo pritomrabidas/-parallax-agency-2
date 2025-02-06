@@ -18,7 +18,7 @@ const OurApps = () => {
               <h2
                 data-aos="fade-right"
                 data-aos-duration="1500"
-                className="text-5xl font-normal text-primary font-Montez py-3"
+                className="sm:text-5xl text-4xl font-normal text-primary font-Montez py-3"
               >
                 Mobile App Designs
               </h2>
@@ -30,7 +30,7 @@ const OurApps = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="w-full lg:w-1/3 md:w-1/3 sm:w-full text-center md:text-right space-y-6"
+            className="w-full lg:w-[40%] md:w-[45%] sm:w-full text-center md:text-right space-y-6 sm:px-20 md:px-2 pb-6 md:pb-0"
           >
             <FeatureItem
               icon={<FaCog />}
@@ -48,7 +48,7 @@ const OurApps = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
-            className="w-full lg:w-1/3 md:w-1/3 sm:w-full text-center md:text-left space-y-6"
+            className="w-full lg:w-[40%] md:w-[45%] sm:w-full text-center md:text-left space-y-6 sm:px-20 md:px-2 "
           >
             <FeatureItem2
               icon={<FaCode />}

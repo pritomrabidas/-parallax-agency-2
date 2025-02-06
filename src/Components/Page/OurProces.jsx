@@ -44,18 +44,18 @@ const OurProces = () => {
           <h2
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="text-5xl font-normal text-primary font-Montez mt-2"
+            className="sm:text-5xl text-4xl font-normal text-primary font-Montez mt-2"
           >
             Our Work Process
           </h2>
         </div>
-        <div className="grid grid-cols-2 justify-center text-center gap-6 px-68 mx-auto">
+        <div className="grid md:grid-cols-2 grid-cols-1 justify-center text-center gap-6 xl:px-68 lg:px-44 md:px-12 px-4 mx-auto">
           {steps.map((item, index) => (
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
               key={index}
-              className="p-8 rounded-lg shadow-sm w-80 scale-95 hover:scale-100 duration-500 bg-[#e7e4e441] transition-all"
+              className="p-8 rounded-lg shadow-sm w-80 scale-95 hover:scale-100 duration-500 bg-[#e7e4e441] transition-all text-center mx-auto"
             >
               <span className="block text-2xl font-bold text-secandari mb-2">
                 {item.step}
