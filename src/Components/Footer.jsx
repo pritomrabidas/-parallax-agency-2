@@ -5,8 +5,29 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { CiInstagram } from "react-icons/ci";
 import { FaMobileScreen } from "react-icons/fa6";
-
+import { useEffect, useState } from "react";
+import { FaChevronUp } from "react-icons/fa";
 const Footer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer className="bg-[#191f27] text-white py-10">
       <div className="container mx-auto px-5">
@@ -109,18 +130,12 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm text-white font-Opensans font-normal">
               <li>
-                <Link
-                  to="/"
-                  className="hover:text-secandari duration-300"
-                >
+                <Link to="/" className="hover:text-secandari duration-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  className="hover:text-secandari duration-300"
-                >
+                <Link to="/about" className="hover:text-secandari duration-300">
                   About Us
                 </Link>
               </li>
@@ -141,10 +156,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/blog"
-                  className="hover:text-secandari duration-300"
-                >
+                <Link to="/blog" className="hover:text-secandari duration-300">
                   Our Blog
                 </Link>
               </li>
@@ -184,6 +196,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <button
+            onClick={scrollToTop}
+            className={`fixed bottom-14 right-4 z-10 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 p-2.5 text-xs text-white shadow-md cursor-pointer ${
+              showButton ? "block" : "hidden"
+            }`}
+          >
+            <FaChevronUp size={20} />
+          </button>
         </div>
       </div>
     </footer>

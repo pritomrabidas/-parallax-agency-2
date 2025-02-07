@@ -46,16 +46,16 @@ const Pricing = () => {
           <h2
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-5xl font-semibold text-primary font-Montez text-center pt-2 pb-16"
+            className="sm:text-5xl text-4xl font-semibold text-primary font-Montez text-center pt-2 pb-16"
           >
             Pricing Offers
           </h2>
         </div>
-        <div className="mb-10 flex justify-center space-x-4 bg-white w-fit  rounded-3xl gap-8 mx-auto scale-95">
+        <div className="mb-10 flex justify-center space-x-4 bg-white w-fit  rounded-3xl gap-8 mx-auto scale-90">
           <button
-            className={`text-lg font-medium font-Nunito-font transition px-20 py-2  rounded-3xl duration-100  transition-all${
+            className={`lg:text-lg md:text-base font-medium font-Nunito-font transition lg:px-20 md:px-16 sm:px-14 px-10 py-2  rounded-3xl duration-100  w-fit transition-all${
               billingCycle === "monthly"
-                ? " text-white bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 px-20 h-full duration-100 transition-all"
+                ? " text-white bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 lg:px-20 md:px-16 sm:px-14 px-10 h-full duration-100 transition-all"
                 : "text-brand"
             }`}
             onClick={() => setBillingCycle("monthly")}
@@ -63,9 +63,9 @@ const Pricing = () => {
             Monthly
           </button>
           <button
-            className={` py-2 text-lg font-medium font-Nunito-font px-20 rounded-3xl transition duration-100 transition-all${
+            className={` py-2 lg:text-lg md:text-base font-medium font-Nunito-font lg:px-20 md:px-16 sm:px-14 px-10 rounded-3xl transition duration-100 transition-all${
               billingCycle === "yearly"
-                ? "text-white bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 to-90% px-20 duration-100 transition-all"
+                ? "text-white bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 to-90% lg:px-20 md:px-16 sm:px-14 px-10 duration-100 transition-all"
                 : "text-brand"
             }`}
             onClick={() => setBillingCycle("yearly")}
@@ -73,7 +73,7 @@ const Pricing = () => {
             Yearly
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:px-36 xl:px-28 lg:px-4 md:px-14 sm:px-10 px-2">
           {plans.map((plan, index) => (
             <div
               data-aos="fade-up"

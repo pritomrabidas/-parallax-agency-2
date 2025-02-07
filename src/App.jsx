@@ -11,6 +11,7 @@ import Pricing from "./Components/Page/Pricing";
 import Portfolio from "./Components/Page/Portfolio";
 import Contact from "./Components/Page/Contact";
 import BlogSection from "./Components/Page/BlogSection";
+import Home from "./Components/Page/Home";
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ function App() {
       // <Route>
       <Route path="/" element={<Layout />}>
         <Route index element={<Page/>}></Route>
+        <Route path="/home" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/pricing" element={<Pricing/>}></Route>
         <Route path="/portfolio" element={<Portfolio/>}></Route>

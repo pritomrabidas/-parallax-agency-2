@@ -85,21 +85,21 @@ const Portfolio = () => {
           <h2
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-5xl font-semibold text-primary font-Montez text-center py-2"
+            className="sm:text-5xl text-4xl font-semibold text-primary font-Montez text-center py-2"
           >
             Our Portfolio
           </h2>
           <p
             data-aos="fade-left"
             data-aos-duration="2000"
-            className="mt-4 text-brand text-sm font-Opensans font-normal mx-auto w-[45%]"
+            className="mt-4 text-brand text-sm font-Opensans font-normal mx-auto lg:w-[45%] md:w-[80%] sm:w-[85%] w-[99%]"
           >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores
             omnis provident quam reiciendis voluptatum.
           </p>
         </div>
         {/* Filter Buttons */}
-        <div className="flex justify-center space-x-4 mb-8">
+        <div className="flex justify-center sm:space-x-4  mb-8">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -114,7 +114,7 @@ const Portfolio = () => {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
           {filteredItems.map((item, index) => (
             <div
               data-aos="fade-up"

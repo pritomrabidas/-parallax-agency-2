@@ -18,7 +18,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-7">
-            {["About", "Pricing", "Portfolio", "Blog", "Contact"].map(
+            {["Home", "About", "Pricing", "Portfolio", "Blog", "Contact"].map(
               (item) => {
                 const isActive = location.pathname.includes(item.toLowerCase());
                 return (
@@ -55,7 +55,7 @@ const Navbar = () => {
               <button onClick={() => setIsOpen(false)}>
                 <RxCross2 className="text-xl cursor-pointer" />
               </button>
-              {["About", "Pricing", "Portfolio", "Blog", "Contact"].map(
+              {["Home","About", "Pricing", "Portfolio", "Blog", "Contact"].map(
                 (item) => {
                   const isActive = location.pathname.includes(
                     item.toLowerCase()

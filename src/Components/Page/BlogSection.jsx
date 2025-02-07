@@ -24,7 +24,7 @@ const BlogSection = () => {
   ];
   return (
     <section className="bg-slate-100 pt-24 pb-16">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto md:px-10 px-4">
         <div className="text-center">
           <p
             data-aos="fade-left"

@@ -1,15 +1,25 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 const Layout = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
-    </div>
-  )
-}
+  const [loading, setLoading] = useState(true);
 
-export default Layout
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+  }, [loading]);
+
+  return (
+    <>
+      <Navbar />
+      {loading ? <Loader /> : <Outlet />}
+      <Footer />
+    </>
+  );
+};
+
+export default Layout;

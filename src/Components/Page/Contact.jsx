@@ -7,7 +7,7 @@ import { CiInstagram } from "react-icons/ci";
 const Contact = () => {
   return (
     <section className="pt-24 pb-16 bg-white">
-      <div className="container mx-auto py-8 px-16 rounded-lg">
+      <div className="container mx-auto py-8 lg:px-20 md:px-10 sm:px-16 px-5 rounded-lg">
         <div className="text-center">
           <p
             data-aos="fade-left"
@@ -19,7 +19,7 @@ const Contact = () => {
           <h2
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-5xl font-semibold text-primary font-Montez text-center py-2"
+            className="sm:text-5xl text-4xl font-semibold text-primary font-Montez text-center py-2"
           >
             Contact Us
           </h2>
