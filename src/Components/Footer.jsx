@@ -44,9 +44,9 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <FaMobileScreen className="text-3xl" />
               <p className="text-white text-sm font-Nunito-font font-normal">
-                +01 - 123 - 4567 <br />
+                01929712201 <br />
                 <Link to="" className="text-secandari">
-                  web@support.com
+                  pritomrabidas42@gmail.com
                 </Link>
               </p>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <TiSocialFacebook />
               </Link>
               <Link
-                to=""
+                to="https://www.facebook.com/pritomrabidas42"
                 className="text-brand text-lg hover:text-secandari duration-300"
               >
                 <TiSocialLinkedin />
