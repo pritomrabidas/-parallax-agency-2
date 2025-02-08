@@ -62,6 +62,7 @@ const Team = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
       {
@@ -69,13 +70,14 @@ const Team = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],
   };
   return (
     <section className="bg-slate-50 py-16 2xl:px-5 xl:px-5 lg:px-14 md:px-6">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto w-full px-10">
         <div className="text-center">
           <p
             data-aos="fade-left"
