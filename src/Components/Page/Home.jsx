@@ -10,7 +10,10 @@ const Home = () => {
   });
   return (
     <section>
-      <div className="bg-[url('home-1.jpg')] bg-cover bg-no-repeat bg-center">
+      <div
+        style={{ backgroundImage: "url('/home-1.jpg')" }}
+        className="bg-cover bg-no-repeat bg-center"
+      >
         <div className="bg-[rgba(0,0,0,0.66)] 2xl:pt-44 xl:pt-40 lg:pt-32  pt-32 2xl:pb-52 xl:pb-48 lg:pb-44 md:pb-40 pb-36">
           <div className="container mx-auto px-0 sm:px-0 md:px-10 lg:px-16 xl:px-16 2xl:px-16">
             <div className="w-full mx-auto text-center">
