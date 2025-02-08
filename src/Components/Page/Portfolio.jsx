@@ -147,13 +147,13 @@ const Portfolio = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-[rgba(6,5,5,0.87)] bg-opacity-90 z-50 flex items-center justify-center">
           <button
-            className="absolute top-4 right-4 text-white text-xl p-2"
+            className="absolute top-4 right-4 text-white text-xl p-2 cursor-pointer"
             onClick={closeModal}
           >
             <FaTimes />
           </button>
           <button
-            className="absolute left-4 text-white text-2xl p-2"
+            className="absolute left-4 text-white text-2xl p-2 cursor-pointer"
             onClick={prevImage}
           >
             <FaCaretLeft />
@@ -161,10 +161,10 @@ const Portfolio = () => {
           <img
             src={filteredItems[currentIndex].image}
             alt={filteredItems[currentIndex].title}
-            className="max-h-[80vh] max-w-[90vw] cursor-pointer rounded-md"
+            className="max-h-[80vh] max-w-[90vw] cursor-default rounded-md"
           />
           <button
-            className="absolute right-4 text-white text-2xl font-Montez p-2"
+            className="absolute right-4 text-white text-2xl font-Montez p-2 cursor-pointer"
             onClick={nextImage}
           >
             <FaCaretRight />

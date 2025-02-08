@@ -10,32 +10,32 @@ import { AiFillInstagram } from "react-icons/ai";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Marc Randolph",
+      name: "Jessica Twain",
       role: "CO FOUNDER",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis, perspiciatis ex aperiam nostrum quod.",
-      img: "https://placehold.jp/380x350.png",
+      img: "https://trax.acrothemes.com/bootstrap-v5/images/team-1.jpg",
     },
     {
       name: "Jin Yuanying",
       role: "CO FOUNDER",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis, perspiciatis ex aperiam nostrum quod.",
-      img: "https://placehold.jp/380x350.png",
+      img: "team-2.jpg",
     },
     {
       name: "Marc Tarpenning",
       role: "CO FOUNDER",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quae qui amet atque nemo. Exercitationem!",
-      img: "https://placehold.jp/380x350.png",
+      img: "https://trax.acrothemes.com/bootstrap-v5/images/team-2.jpg",
     },
     {
       name: "Evan Williams",
       role: "CO FOUNDER",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita corrupti maxime sequi asperiores voluptate!",
-      img: "https://placehold.jp/380x350.png",
+      img: "https://trax.acrothemes.com/bootstrap-v5/images/team-3.jpg",
     },
   ];
 
@@ -98,7 +98,7 @@ const Team = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
               key={index}
-              className="item hover:scale-[1.02] duration-500 group rounded-3xl px-4 justify-center mx-auto flex"
+              className="item hover:scale-[1.02] duration-500 group rounded-3xl px-4 justify-center mx-auto flex border-none outline-none"
             >
               <img
                 src={member.img}
